@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+.nav-button{
+	height: auto;
+	width:auto;
+}
+.navbar{
+	border-radius:0px;
+}
+
+.nav-profile-icon img {
+    max-height:40px;
+    width:auto;
+}
+
+.nav-profile-name, .nav-profile-name h6, .nav-profile-name small {
+	text-align:right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-user {
+	font-weight: bold;
+	padding: 0px;
+	font-size: small;
+}
+
+.agree-check {
+	margin-right:10px;
+}
+
+#register-form .tab-content{
+  height:250px;
+}
+
+@media (max-width: 768px) {
+	#register-form .no-padding{
+	  padding:0px;
+	}
+	#register-form .no-padding-left{
+	  padding-left:0px;
+	}
+	#register-form .tab-content{
+	  height:350px;
+	}
+}
+
+#register-form .profile-option{
+	margin:0px 15px 0px 0px;
+}
+
+@media (max-width: 600px) {
+	#register-form .profile-option{
+		margin:0px -10px 0px -10px;
+	}
+}

@@ -1,0 +1,11 @@
+mixin navItem(target, title)
+  li
+    a(href=target) #{title}  &nbsp; 
+      block
+  
+mixin navLinks()
+  ul.nav.navbar-nav(style='margin:0px,padding:0px;')
+    li
+      a(href='/') Progress
+    li
+      a(href='/manage') Manage
