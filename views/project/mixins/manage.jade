@@ -1,5 +1,5 @@
 mixin newTask()
-  form(action='/project/create/task', method='POST')
+  form(action='/create/task', method='POST')
     #task-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='taskLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -14,7 +14,7 @@ mixin newTask()
             +formProcessBtn()
 
 mixin newStory()
-  form(action='/project/create/story', method='POST')
+  form(action='/create/story', method='POST')
     #story-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='storyLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -29,7 +29,7 @@ mixin newStory()
             +formProcessBtn()
 
 mixin editProject()
-  form(action='/project/update', method='POST')
+  form(action='/update', method='POST')
     #edit-project-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='projectEditLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -38,7 +38,7 @@ mixin editProject()
             +formProcessBtn()
 
 mixin editSprint()
-  form(action='/project/update/iteration', method='POST')
+  form(action='/update/iteration', method='POST')
     #edit-sprint-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='sprintEditLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -48,7 +48,7 @@ mixin editSprint()
             +formProcessBtn()
 
 mixin editTask()
-  form(action='/project/update/task', method='POST')
+  form(action='/update/task', method='POST')
     #edit-task-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='EditLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content
@@ -57,7 +57,7 @@ mixin editTask()
             +formProcessBtn()
             
 mixin editStory()
-  form(action='/project/update/story', method='POST')
+  form(action='/update/story', method='POST')
     #edit-story-form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='storyEditLabel', aria-hidden='true')
       .modal-dialog.modal-lg
         .modal-content

@@ -17,27 +17,13 @@ module.exports = function (data) {
 		
 	});
 
-	/* GET status */
-	router.get('/status', function(req, res) {
-		data.project.read({active:true}, function(err, project){
-			if(err){console.error(err);}
-			if(!project){
-				res.render('project/detail', { title:"Project Status" });
-			} else {
-				console.log('manage', project, err);
-				res.render('project/detail', { project:project, title:"Project Status" });
-			}
-		});	
-		
-	});
-
 	/* GET-POST project */
 	router.post('/create', function(req, res) {
 		var projectObj = createObj.newProject(req);
 		data.project.create(projectObj, function(err, project){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage');
+			res.redirect('/manage');
 		});
 	});
 	
@@ -48,7 +34,7 @@ module.exports = function (data) {
 		data.project.create(projectObj, function(err, project){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage#manage');
+			res.redirect('/manage#manage');
 		});
 	});
 
@@ -59,7 +45,7 @@ module.exports = function (data) {
 		data.project.create(projectObj, function(err, project){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage#manage');
+			res.redirect('/manage#manage');
 		});
 	});
 
@@ -70,7 +56,7 @@ module.exports = function (data) {
 		data.project.update(Obj, function(err, data){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage#manage');
+			res.redirect('/manage#manage');
 		});	
 	});
 
@@ -92,7 +78,7 @@ module.exports = function (data) {
 		data.project.update(Obj, function(err, data){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage#manage');
+			res.redirect('/manage#manage');
 		});	
 	});
 
@@ -103,7 +89,7 @@ module.exports = function (data) {
 		data.project.update(Obj, function(err, data){
 			if(err){console.error(err);}
 			
-			res.redirect('/project/manage#manage');
+			res.redirect('/manage#manage');
 		});	
 	});
 
