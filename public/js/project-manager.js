@@ -12,7 +12,7 @@ function storyToTask(e){
 	    e.stopPropagation(); // Stops some browsers from redirecting.
 	  }
 
-	form.setAttribute('action', '/project/update/story');
+	form.setAttribute('action', '/update/story');
 	form.setAttribute('method', 'POST');
 	story.setAttribute('name', 'id');
 	story.setAttribute('type', 'hidden');
@@ -129,7 +129,7 @@ function taskToIteration(e){
 	  if (e.stopPropagation) {
 	    e.stopPropagation(); // Stops some browsers from redirecting.
 	  }
-	form.setAttribute('action', '/project/update/task');
+	form.setAttribute('action', '/update/task');
 	form.setAttribute('method', 'POST');
 	iteration.setAttribute('name', 'iteration');
 	iteration.setAttribute('type', 'hidden');
